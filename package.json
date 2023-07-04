@@ -1,0 +1,22 @@
+{
+  "name": "scanverse",
+  "version": "1.0.0",
+  "description": "QR Code Reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterMickey/ScanVerse.git"
+  },
+  "author": "Mister Mickey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MisterMickey/ScanVerse/issues"
+  },
+  "homepage": "https://github.com/MisterMickey/ScanVerse",
+  "dependencies": {
+    "html5-qrcode": "^2.3.8"
+  }
+}
