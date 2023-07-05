@@ -23,10 +23,17 @@ function startScan() {
   scanner.render(success, error);
 
   function success(result) {
+
+    readerContainer.style.display = "none";
+    // result.style.display = "none";
+
     // Prints result as a link inside result element
     document.getElementById("result").innerHTML = `
-        <h2>Success!</h2>
-        <p><a href="${result}">${result}</a></p>
+        <div class="alert alert-success" role="alert">
+         Success!
+        </div>
+        <div class="alert alert-primary" role="alert">
+        <span style="color:black;">Extracted Data:</span> ${result}</div>
         `;
 
     // Clears scanning instance
