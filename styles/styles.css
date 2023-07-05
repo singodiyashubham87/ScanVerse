@@ -13,6 +13,7 @@ body {
 }
 
 main {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +32,7 @@ main {
   font-weight: 800;
 }
 #readerContainer {
+  margin: 1rem;
   display: none;
   border: 4px solid #a1a0a0;
   border-radius: 0.625rem;
@@ -40,12 +42,15 @@ main {
 }
 #reader {
   width: 600px;
-  display: none;
   background-color: white;
   border-radius: 0.625rem;
 }
 #result {
+  margin: 1rem;
   text-align: center;
   font-size: 1.5rem;
   display: none;
+}
+#qrData{
+  color: #0E2954;
 }

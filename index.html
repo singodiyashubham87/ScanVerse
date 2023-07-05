@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ScanVerse</title>
+    <link rel="icon" href="./images/logo.png">
     <!-- Html5Qrcode javascript  -->
     <script src="./node_modules/html5-qrcode/html5-qrcode.min.js"></script>
     <!-- Linking Bootstrap  -->
@@ -19,20 +20,37 @@
       crossorigin="anonymous"
     ></script>
     <!-- Linking Custom Stylesheet -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
 
     <main>
+
+
       <button id="btn" type="button" class="btn btn-dark" onclick="startScan()">
         START
       </button>
+
+
       <div id="readerContainer">
         <div id="reader"></div>
       </div>
-      <div id="result"></div>
+
+
+      <div id="result">
+
+        <div style="display: none;" id="success" class="alert alert-success" role="alert">
+          Scan in Progress!
+         </div>
+
+        <div style="display: none;" id="data" class="alert alert-primary" role="alert">
+          <span style="color:black;">Extracted Data: <span id="qrData"></span> </span>
+        </div>
+      </div>
+
+
     </main>
 
-    <script src="./script.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
