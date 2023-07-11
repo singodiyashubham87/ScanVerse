@@ -21,8 +21,8 @@ function initScanner() {
   const scanner = new Html5QrcodeScanner("reader", {
     // Sets dimensions of scanning box (set relative to reader element width)
     qrbox: {
-      width: 250,
-      height: 250,
+      width: 300,
+      height: 300,
     },
     fps: 20, // Frames per second to attempt a scan
   });
@@ -30,16 +30,19 @@ function initScanner() {
   // Starts scanner
   scanner.render(success, error);
 
-  function success(result){
+  function success(result) {
     successDiv.textContent = "Success!";
+    console.log(typeof(result))
+    if(result.includes("http"))
+    qrData.innerHTML = `<a href="${result}" target="_blank">${result}</a>`;
+    else
     qrData.textContent = result;
   }
 
-  function error(err){
+  function error(err) {
     console.err(err);
   }
 }
-
 // function success(result) {
 //   readerContainer.style.display = "none";
 

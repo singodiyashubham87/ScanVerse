@@ -24,27 +24,33 @@
   </head>
   <body>
 
+    <!-- <img src="./images/logo.png" alt="logo" width="125px" height="125px"> -->
+
     <main>
 
+      <div class="parentContainer">
 
-      <button id="btn" type="button" class="btn btn-dark" onclick="startScan()">
-        START
-      </button>
+        <img id="logo" src="./images/logo.png" alt="">
 
-
-      <div id="readerContainer">
-        <div id="reader"></div>
-      </div>
-
-
-      <div id="result">
-
-        <div style="display: none;" id="success" class="alert alert-success" role="alert">
-          Scan in Progress!
-         </div>
-
-        <div style="display: none;" id="data" class="alert alert-primary" role="alert">
-          <span style="color:black;">Extracted Data: <span id="qrData"></span> </span>
+        <button id="btn" type="button" class="btn btn-dark" onclick="startScan()">
+          START
+        </button>
+  
+  
+        <div id="readerContainer">
+          <div id="reader"></div>
+        </div>
+  
+  
+        <div id="result">
+  
+          <div style="display: none;" id="success" class="alert alert-success" role="alert">
+            Pending!
+           </div>
+  
+          <div style="display: none;" id="data" class="alert alert-primary" role="alert">
+            <span style="color:black;">Extracted Data: <span id="qrData"></span> </span>
+          </div>
         </div>
       </div>
 
