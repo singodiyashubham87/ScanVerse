@@ -54,10 +54,7 @@ ScanVerse is brought to you by the following talented individuals:
 
 We appreciate our team member's hard work and dedication to make ScanVerse a reality.
 
-
-
-# Acknowledgements
-We would like to thank all the contributors who have helped in the development of ScanVerse. I would greatly appreciate your support and contributions.
+<!--- Acknowledgements: We would like to thank all the contributors who have helped in the development of ScanVerse. I would greatly appreciate your support and contributions -->
 
 Thank you for visiting ScanVerse! </br>Feel free to explore the code, contribute, and provide feedback.
 
