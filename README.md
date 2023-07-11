@@ -47,10 +47,10 @@ We welcome contributions from the open-source community to improve ScanVerse. Fo
 # Team
 ScanVerse is brought to you by the following talented individuals:
 
-* <u>Shubham Singodiya</u> - Developer & Project Lead
-* <u>Vanshita Jain</u> - Designer
-* <u>Sarthak Saxena</u> - Graphics Designer
-* <u>Vansh Gill</u> - UI Designer
+* **_Shubham Singodiya_** - Developer & Project Lead
+* **_Vanshita Jain_** - Designer
+* **_Sarthak Saxena_** - Graphics Designer
+* **_Vansh Gill_** - UI Designer
 
 We appreciate our team member's hard work and dedication to make ScanVerse a reality.
 
