@@ -1,7 +1,5 @@
 <h1 align="center">ScanVerse - QR Code Scanner Webapp :rocket:</h1> 
 
-<img alt="logo" src="./images/logo.png">
-
 <p>ScanVerse is a QR Code Scanner Web app built using HTML, CSS, JS, and BootStrap, leveraging the power of the HTML5Qrcode API. It allows users to easily scan QR codes using their device's camera and extract information encoded within the code.</p>
 
 # Table of Contents
