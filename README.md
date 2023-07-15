@@ -56,10 +56,18 @@ ScanVerse is brought to you by the following talented individuals:
 
 We appreciate our team member's hard work and dedication to make ScanVerse a reality.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Releases
+
+* **Release 0.0** : July 16, 2023 @00:41 [Zeroth phase of application completed.]
+  - Features: QR Code Scanning facility with opening anchor links embedded inside QR in separate window just after scanning if pop-ups are allowed.
+
 <!--- Acknowledgements: We would like to thank all the contributors who have helped in the development of ScanVerse. I would greatly appreciate your support and contributions -->
 
+
+# Message from PA
 Thank you for visiting ScanVerse! </br>Feel free to explore the code, contribute, and provide feedback.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
