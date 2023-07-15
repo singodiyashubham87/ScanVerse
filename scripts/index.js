@@ -32,11 +32,11 @@ function initScanner() {
 
   function success(result) {
     successDiv.textContent = "Success!";
-    console.log(typeof(result))
-    if(result.toLowerCase().includes("http")){
+    if(result.toLowerCase().includes("http") || result.toLowerCase().includes(".com")){
       qrData.innerHTML = `<a href="${result}" target="_blank">${result}</a>`;
       window.open(result,"_blank");
-    }else
+    }
+    else
     qrData.textContent = result;
   }
 
