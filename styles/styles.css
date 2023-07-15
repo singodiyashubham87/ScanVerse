@@ -43,6 +43,7 @@ main {
   height: auto;
   top: 3rem;
   left: 3rem;
+  border-radius: .8rem;
 }
 
 #btn {
@@ -87,6 +88,11 @@ main {
 
 #success, #data{
   background-color: #fff;
+  display: none;
+}
+
+span.result{
+  color: #000;
 }
 
 #qrData {
