@@ -44,6 +44,8 @@ function initScanner() {
     console.err(err);
   }
 }
+
+//To be continued................
 // function success(result) {
 //   readerContainer.style.display = "none";
 
