@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ScanVerse</title>
-    <link rel="icon" href="./images/logo.png">
+    <link rel="icon" href="./images/logo.png" />
     <!-- Html5Qrcode javascript  -->
     <script src="./node_modules/html5-qrcode/html5-qrcode.min.js"></script>
     <!-- Linking Bootstrap  -->
@@ -23,38 +23,31 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-
     <!-- <img src="./images/logo.png" alt="logo" width="125px" height="125px"> -->
 
     <main>
-
       <div class="parentContainer">
-
-        <img id="logo" src="./images/logo.png" alt="">
-
+        <img id="logo" src="./images/logo.png" alt="" />
         <button id="btn" type="button" class="btn btn-dark" onclick="startScan()">
           START
         </button>
-  
-  
+        
+        <!-- QR Scan and Result Display -->
         <div id="readerContainer">
           <div id="reader"></div>
         </div>
-  
-  
+
         <div id="result">
-  
-          <div style="display: none;" id="success" class="alert alert-success" role="alert">
+          <div id="success" class="alert alert-success" role="alert">
             Pending!
-           </div>
-  
-          <div style="display: none;" id="data" class="alert alert-primary" role="alert">
-            <span style="color:black;">Extracted Data: <span id="qrData"></span> </span>
+          </div>
+          <div id="data" class="alert alert-primary" role="alert">
+            <span class="result">
+              Extracted Data: <span id="qrData"></span>
+            </span>
           </div>
         </div>
       </div>
-
-
     </main>
 
     <script src="./scripts/index.js"></script>
