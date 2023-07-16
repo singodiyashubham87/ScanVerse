@@ -38,6 +38,7 @@ main {
 }
 
 #logo{
+  border: 2px solid #fff;
   position: absolute;
   width: 150px;
   height: auto;
@@ -97,4 +98,27 @@ span.result{
 
 #qrData {
   color: #0e2954;
+}
+
+@media screen and (max-width: 768px){
+  #logo{
+    border: 2px solid white;
+    width: 100px;
+    top: 1.5rem;
+    left: 7rem;
+  }
+
+  #readerContainer{
+    max-width: 80%;
+    margin-top: 8rem;
+  }
+
+  #reader{
+    max-width: 100%;
+  }
+
+  #readerContainer + #result{
+    font-size: 1rem;
+    padding: 0rem !important;
+  }
 }
