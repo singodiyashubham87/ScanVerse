@@ -67,7 +67,8 @@ We appreciate our team member's hard work and dedication to make ScanVerse a rea
 
 
 # Message from PA
-Thank you for visiting ScanVerse! </br>Feel free to explore the code, contribute, and provide feedback.
+Thank you for visiting ScanVerse!💝
+</br>Feel free to explore the code, contribute, and provide feedback.
 
 
 
