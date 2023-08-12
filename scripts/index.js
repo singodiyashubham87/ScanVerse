@@ -1,18 +1,17 @@
-const startBtn = document.getElementById("btn");
-const reader = document.getElementById("reader");
-const result = document.getElementById("result");
+const readerStartBtn = document.getElementById("readerStartBtn");
 const readerContainer = document.getElementById("readerContainer");
-const successDiv = document.getElementById("success");
-const dataDiv = document.getElementById("data");
-const qrData = document.getElementById("qrData");
-const reScan = document.querySelector(".reScan");
+const reader = document.getElementById("reader");
+const resultContainer = document.getElementById("resultContainer");
+const scanStatus = document.getElementById("scanStatus");
+const data = document.getElementById("data");
+const result = document.querySelector(".result");
+const content = document.getElementById("content");
+const generateQr = document.getElementById("submit");
 
 function startScan() {
-  startBtn.style.display = "none";
-  readerContainer.style.display = "block";
-  result.style.display = "block";
-  dataDiv.style.display = "block";
-  successDiv.style.display = "block";
+  readerStartBtn.classList.toggle("hidden");
+  readerContainer.classList.toggle("hidden");
+  resultContainer.classList.toggle("hidden");
   initScanner();
 }
 
@@ -31,13 +30,21 @@ function initScanner() {
   scanner.render(success, error);
 
   function success(result) {
-    successDiv.textContent = "Success!";
-    if(result.toLowerCase().includes("http") || result.toLowerCase().includes(".com")){
-      qrData.innerHTML = `<a href="${result}" target="_blank">${result}</a>`;
-      window.open(result,"_blank");
-    }
-    else
-    qrData.textContent = result;
+    scanStatus.textContent = "Success!";
+    if (
+      result.toLowerCase().includes("http") ||
+      result.toLowerCase().includes(".com")
+    ) {
+      content.innerHTML = `<a href="${result}" target="_blank">${result}</a>`;
+      window.open(result, "_blank");
+    } else content.textContent = result;
+
+    readerContainer.addEventListener("click", function (e) {
+      if (e.target.id === "html5-qrcode-button-camera-stop") {
+        scanStatus.textContent = "Pending!";
+        content.innerHTML = "";
+      }
+    });
   }
 
   function error(err) {
@@ -45,35 +52,25 @@ function initScanner() {
   }
 }
 
-//To be continued................
-// function success(result) {
-//   readerContainer.style.display = "none";
 
-// result.style.display = "none";
+generateQr.addEventListener("click", (e) => {
 
-// Prints result as a link inside result element
-// document.getElementById("result").innerHTML = `
-//     <div class="alert alert-success" role="alert">
-//      Success!
-//     </div>
-//     <div class="alert alert-primary" role="alert">
-//     <span style="color:black;">Extracted Data:</span></div>
-//     <button id="btn" type="button" class="reScan btn btn-dark">Scan Again</button>
-//     `;
+  e.preventDefault();
 
-// ${result}
-// Clears scanning instance
-// scanner.clear();
+  const typeNumber = parseInt(document.querySelector("input[name='typeNumber']").value);
+  const qrContent = document.querySelector("input[name='data']").value;
+  const level = document.getElementById("errorCorrectionLevel").value;
 
-// Removes reader element from DOM since no longer needed
-// document.getElementById("reader").remove();
-// }
+  if (typeNumber >= 0 && typeNumber < 41)
+    createQr(typeNumber, qrContent, level);
+  else alert("Invalid type number! Please enter type number between 0 and 41");
+});
 
-// function error(err) {
-// Prints any errors to the console
-// console.error(err);
-// }
+function createQr(typeNumber,qrData,errorCorrectionLevel) {
+  const qr = qrcode(typeNumber, errorCorrectionLevel); //intialization of qr code
+  qr.addData(qrData); // optionally we can specify data mode too addData(qrData,'Numeric')
+  qr.make();
+  document.querySelector("#form").style.display = "none";
+  document.getElementById("placeHolder").innerHTML = qr.createImgTag();
+}
 
-// const reScan = document.querySelector(".reScan");
-// reScan.onclick = () => console.log("ReScan clicked");
-// }
