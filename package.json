@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MisterMickey/ScanVerse",
   "dependencies": {
-    "html5-qrcode": "^2.3.8"
+    "html5-qrcode": "^2.3.8",
+    "qrcode-generator": "^1.4.4"
   }
 }
