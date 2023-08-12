@@ -365,3 +365,10 @@ form a:hover {
     width: 80vw;
   }
 }
+
+
+@media screen and (max-width: 480px){
+  form a{
+    width: 80%;
+  }
+}
