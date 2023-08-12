@@ -19,7 +19,7 @@ body{
 }
 
 .scannerContainer, .generatorContainer{
-  width: 100vw;
+  width: 99vw;
   min-height: 100vh;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.97) inset;
   background: url("../images/moon.jpg") no-repeat center;
