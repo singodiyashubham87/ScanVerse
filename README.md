@@ -1,4 +1,4 @@
-<h1 align="center">ScanVerse - QR Code Scanner Webapp :rocket:</h1> 
+<h1 align="center">ScanVerse - QR Code Scanner Webapp</h1> 
 
 <div align="center"><img src="./images/logo.png" width="200px" height="200px"/></div>
 
