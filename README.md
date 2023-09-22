@@ -35,7 +35,7 @@ We welcome contributions from the open-source community to improve ScanVerse. Fo
 
 6. Push your changes to your forked repository.
 
-`git push origin feature/my-contribution` </br>
+`git push origin feature/<my-contribution>` </br>
 
 7. Open a Pull Request (PR) from your forked repository to the main repository.
 
