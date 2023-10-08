@@ -45,6 +45,12 @@ We welcome contributions from the open-source community to improve ScanVerse. Fo
 
 10. Once approved, your changes will be merged into the main repository.
 
+# Tech Stack
+
+* **HTML**
+* **CSS** 
+* **JavaScript**
+* **HTML5QrCodeReader Library**
 
 # Team
 ScanVerse is brought to you by the following talented individuals:
